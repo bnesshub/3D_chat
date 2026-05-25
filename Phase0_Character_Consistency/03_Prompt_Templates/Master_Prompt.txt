@@ -1,68 +1,88 @@
 ================================================================
-MASTER PROMPT TEMPLATE — Grok Imagine multi-view references
+MASTER PROMPT — Liora Voss multi-view reference set
 ================================================================
 
-Goal: produce 8–12 reference images that all look like the EXACT
+Goal: produce 8–9 reference images that all look like the EXACT
 same character from different angles and expressions. Keep the
-first 2–3 sentences identical across every generation so the style
-locks in. Replace bracketed [PLACEHOLDERS] with values from
-01_Style_Guide.md.
+"LOCKED CHARACTER BLOCK" identical across every generation so the
+style locks in. Only change the "View / Pose / Expression" line.
 
 ----------------------------------------------------------------
-TEMPLATE
+LOCKED CHARACTER BLOCK (copy-paste verbatim, every generation)
 ----------------------------------------------------------------
 
-Create a clean, high-definition cartoon character reference sheet in [YOUR EXACT STYLE] style.
+High-detail character reference in photoreal-anime hybrid style.
 
-Character: [PASTE SHORT DESCRIPTION FROM STYLE GUIDE]
+Character: Liora Voss, confident adult woman, charismatic explorer archetype.
 
-Exact appearance rules:
-- [MUST-HAVE FEATURE 1]
-- [MUST-HAVE FEATURE 2]
-- [MUST-HAVE FEATURE 3]
-- [MUST-HAVE FEATURE 4]
-- [MUST-HAVE FEATURE 5]
-- Bold clean black outlines, flat colors with soft cel-shading
-- Large expressive eyes, [SPECIFIC EYE SHAPE]
-- Color palette: primary [#HEX], secondary [#HEX], accent [#HEX]
+Appearance (must match exactly):
+- Messy high bun with soft bangs and loose face-framing strands
+- Rich dark brown hair (#3A2F2F) with subtle warm highlights
+- Large expressive amber-brown eyes (#7A4B2A), long lashes, subtle eyeliner, eyes ~1.5x realistic scale
+- Small beauty mark directly under the left eye
+- Full lips, natural slight upturned smile
+- Warm peach skin (#F5D0C5) with realistic micro-detail, soft sheen, soft subsurface highlights
+- Stylized 1:6.5 head-to-body ratio, hourglass silhouette, long toned legs
+- Wardrobe: sheer white fitted tank top + light gray garment with warm gold (#C9A227) lace trim
 
-View: [FRONT / THREE-QUARTER LEFT / SIDE LEFT / BACK / etc.]
-Pose: Neutral standing T-pose, arms slightly away from body, looking directly at camera
-Lighting: Soft even studio lighting, no harsh shadows
-Background: Pure white
-Resolution: 4K, sharp details, perfect proportions matching the style guide
-
-Do not add extra details, realistic textures, or change the character design.
+Style rules:
+- Photoreal-anime hybrid: realistic skin and lighting, anime-scale eyes and facial proportions
+- Soft cinematic gradients on skin, subtle cel-shading on hair and fabric
+- No hard cartoon outlines on skin, no plastic/doll material, no flat-shaded skin
+- Background: pure neutral light gray (#E8E8E8)
+- Lighting: soft even studio lighting, gentle key from camera-left, no harsh shadows
+- Resolution: 4K, sharp focus, full body in frame
 
 ----------------------------------------------------------------
-ANTI-DRIFT APPEND (use on view #2 onward)
+PER-IMAGE LINE (swap this for each of the 9 views)
 ----------------------------------------------------------------
 
-Strictly match the exact same character design, colors, and proportions as the previous images in this series.
+View 1:  Front view, neutral relaxed standing pose, arms slightly away from body, looking directly at camera, confident half-smile.
+View 2:  Three-quarter front-left view, same neutral pose, looking toward camera.
+View 3:  Three-quarter front-right view, same neutral pose, looking toward camera.
+View 4:  Side-left profile, same neutral pose, looking straight ahead (camera-left).
+View 5:  Side-right profile, same neutral pose, looking straight ahead (camera-right).
+View 6:  Back view, same neutral pose, bun and hair detail clearly visible, arms relaxed at sides.
+View 7:  Front view, happy expression — bright smile, eyes slightly narrowed, same standing pose.
+View 8:  Front view expression sheet — four head-and-shoulders panels in a 2x2 grid showing talking, surprised, smug, and playful expressions, same hair and lighting in every panel.
+View 9 (optional): Front view, confident standing action pose — weight on one hip, one hand on hip, the other relaxed.
+
+----------------------------------------------------------------
+ANTI-DRIFT APPEND (paste at the end of view #2 onward)
+----------------------------------------------------------------
+
+Strictly match the exact same character design, hair, eyes, beauty mark, skin tone, proportions, and wardrobe as the previous images in this series. Do not add, remove, or restyle any feature.
+
+----------------------------------------------------------------
+HARD NEGATIVE CONSTRAINTS (append if a tool supports negatives)
+----------------------------------------------------------------
+
+Avoid: nudity, changed proportions, different hairstyle, missing beauty mark, different eye color, plastic skin, doll-like material, hard cartoon outlines on skin, busy background, multiple characters, watermark, text.
 
 ----------------------------------------------------------------
 VIEW CHECKLIST
 ----------------------------------------------------------------
 
-[ ] 1. Front view — neutral T-pose
+[ ] 1. Front — neutral
 [ ] 2. ¾ Front Left
 [ ] 3. ¾ Front Right
 [ ] 4. Side Left (profile)
 [ ] 5. Side Right (profile)
-[ ] 6. Back view
-[ ] 7. Front view — happy expression
-[ ] 8. Expression sheet (talking / surprised / thinking / smug)
-[ ] 9. Optional: action pose (wave / run / sit)
+[ ] 6. Back
+[ ] 7. Front — happy
+[ ] 8. Expression sheet (talking / surprised / smug / playful)
+[ ] 9. Optional: confident action pose
 
 ----------------------------------------------------------------
-PRO TIPS FOR CONSISTENCY
+CONSISTENCY TIPS
 ----------------------------------------------------------------
 
-- Keep the first 2–3 sentences of every prompt IDENTICAL.
-- Use the same seed if the tool offers it; otherwise log the
-  generation number in 04_Notes.txt.
-- Generate one view at a time; use "edit" or "vary" on a previous
-  image to keep style locked.
-- If results drift, paste the ANTI-DRIFT APPEND at the end.
-- If a view still drifts, regenerate it — do not move forward
-  with inconsistent references.
+- Keep the LOCKED CHARACTER BLOCK byte-identical across all 9 prompts.
+- Reuse the same seed if Grok Imagine offers it; otherwise log the
+  generation number for each view in 04_Notes.txt.
+- Generate one view at a time. After view 1 is approved, use the
+  "edit / vary" feature on view 1 as the base for views 2+.
+- If a view drifts (wrong hair, missing beauty mark, off proportions),
+  regenerate it — do not move forward with inconsistent references.
+- The eye color, beauty mark, and bun shape are the three most
+  common drift points. Check those first on every output.
