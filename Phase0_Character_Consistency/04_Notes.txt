@@ -25,7 +25,15 @@ DESIGN DECISIONS
 KNOWN DRIFT / FIXES
 ----------------------------------------------------------------
 
-- (e.g. "Side view kept shrinking ears — added 'large expressive ears, same size as front view' to prompt")
+- Full-body shot (10_Front_FullBody.png, gen 11419): hair color
+  drifted auburn/copper instead of dark-brown. Lighting flattened.
+  Locked anyway because the proportions are clean — this image is
+  the proportion anchor only. Downstream 3D tools should pull
+  hair/face/eye color from the close-up references.
+- Grok Imagine tends to default to "near-front, head-to-mid-torso,
+  painterly" and ignore view instructions. Leading the prompt with
+  the framing/view requirement (instead of the character block)
+  helps break this pattern.
 -
 
 ----------------------------------------------------------------

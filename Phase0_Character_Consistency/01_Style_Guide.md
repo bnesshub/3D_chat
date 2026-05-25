@@ -104,7 +104,7 @@
 | 7 | `07_Front_Happy.jpg` | TODO | Front view, happy/laughing expression |
 | 8 | `08_Expression_Sheet.jpg` | TODO | 2x2 grid: talking / surprised / smug / playful |
 | 9 | `09_Action_Pose.jpg` | Optional | Confident standing action pose |
-| 10 | `10_Front_FullBody.jpg` | TODO | Full body head-to-thigh for proportion lock |
+| 10 | `10_Front_FullBody.png` | **LOCKED (proportion anchor)** | Full-body head-to-ankles; hair color drifted auburn — pull color from close-up references, use this for proportions only |
 
 ---
 
@@ -114,8 +114,10 @@
 - [x] Rendering style locked (painterly photoreal-anime hybrid)
 - [x] Eye color locked (#C8741F)
 - [x] Wardrobe locked (opaque ribbed cotton + opaque boyshorts)
-- [x] Front, ¾ left, ¾ right, back, side-left references locked (5 of 9)
+- [x] Front, ¾ left, ¾ right, back, side-left, full-body references locked (6 of 9)
 - [ ] Side-right profile generated
+- [ ] Expression sheet generated
+- [ ] Downstream 3D tools: pull hair/face/eye color from close-up references, NOT from `10_Front_FullBody.png` (color drifted auburn)
 - [ ] Full-body front shot generated
 - [ ] Expression sheet generated
 - [ ] Side-by-side consistency check passed
