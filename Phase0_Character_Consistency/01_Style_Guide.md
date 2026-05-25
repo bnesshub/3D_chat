@@ -18,8 +18,9 @@
 |------------|----------|-------------------------------------------------------------|
 | Primary    | #F5D0C5  | Skin — warm peach base                                      |
 | Secondary  | #3A2F2F  | Hair — rich dark brown with subtle warm highlights          |
-| Accent 1   | #C9A227  | Wardrobe accents — warm gold (lace trim, jewelry details)   |
-| Accent 2   | #E8E8E8  | Wardrobe base — off-white / light gray garments             |
+| Eyes       | #C8741F  | Amber-brown iris (locked from reference set, was #7A4B2A)   |
+| Accent 1   | #C9A227  | Wardrobe accents — warm gold (waistband trim, jewelry)      |
+| Accent 2   | #E8E8E8  | Wardrobe base — white tank, light gray boyshorts            |
 | Outline    | #1A1A1A  | Linework and deepest shadows — bold near-black              |
 | Highlight  | #FFF2E6  | Skin and hair specular highlights — warm soft white         |
 
@@ -49,23 +50,27 @@
 
 ## Style Rules
 
-- **Outlines:** Subtle dark linework on hair and major silhouette edges; no bold cartoon outlines on skin.
-- **Shading:** Soft cinematic gradients; cel-shading only on hair and fabric; smooth realistic falloff on skin.
-- **Texture rules:** Realistic skin micro-detail (subtle pores, faint sheen). Hair as defined strand clusters, not painted blobs. Fabric should read as fabric (lace patterns visible).
-- **Tone:** Premium, polished, high-detail — "photoreal anime hybrid". Confident, not coy.
+**Locked rendering style:** Painterly photoreal-anime hybrid — visible brush texture, cinematic rim lighting from upper-left, realistic skin gradients with stylized anime facial proportions. Match the rendering of `01_Front_Neutral.jpg`, `02_ThreeQuarter_Left.jpg`, `03_ThreeQuarter_Right.jpg`, and `06_Back.jpg`. Do NOT drift toward full photoreal (no real-skin micro-pores) or flat cel-shaded anime.
+
+- **Outlines:** Subtle painterly edges on hair and silhouette; no hard cartoon outlines on skin.
+- **Shading:** Soft cinematic gradients with warm rim light; brush-texture rendering on skin and fabric.
+- **Texture rules:** Painterly skin (no realistic pore detail). Hair as defined strand clusters with rim-light highlights. Fabric reads as ribbed cotton — solid weave, not lace or sheer.
+- **Tone:** Confident, charismatic, mature adult — not coy, not exaggerated.
 - **Things the style must NEVER include:**
   - Hard cartoon outlines on skin
-  - Flat-shaded skin without gradient falloff
+  - Flat cel-shaded skin without gradient falloff
+  - Full photoreal rendering (real-skin micro-pores, photo-grain)
   - Plastic / doll-like skin material
-  - Realistic-anime proportion drift toward either extreme (full anime or full photoreal)
-  - Nudity in the reference set — wardrobe is always present
+  - Sheer or transparent fabric, visible nipples, wet-look material
+  - Oversized anime eyes (keep realistic eye-to-face ratio)
+  - Childlike or ambiguous-age face — must read as adult woman
 
 ---
 
 ## Wardrobe (Default Reference Outfit)
 
-- Sheer white fitted tank top
-- Light gray lace lower garment with warm gold trim accents
+- **Opaque white ribbed cotton tank top** — scoop neckline, hem at waist, no transparency
+- **Light gray opaque cotton boyshorts** with warm gold (#C9A227) stitched trim at the waistband
 - No footwear required for reference views
 - Wardrobe is the **reference outfit only** — additional outfits get their own subfolder later
 
@@ -88,23 +93,31 @@
 
 ## Reference Image Index
 
-1. `01_Front_Neutral.png` — Front view, neutral standing pose
-2. `02_ThreeQuarter_Left.png` — ¾ Front Left
-3. `03_ThreeQuarter_Right.png` — ¾ Front Right
-4. `04_Side_Left.png` — Side Left (profile)
-5. `05_Side_Right.png` — Side Right (profile)
-6. `06_Back.png` — Back view (bun visible, hair detail)
-7. `07_Front_Happy.png` — Front view, happy expression
-8. `08_Expression_Sheet.png` — Expression sheet (talking / surprised / smug / playful)
-9. `09_Action_Pose.png` — Optional: confident standing action pose
+| # | File | Status | Notes |
+|---|------|--------|-------|
+| 1 | `01_Front_Neutral.jpg` | **LOCKED** | Head-to-mid-torso crop; full-body re-shoot pending |
+| 2 | `02_ThreeQuarter_Left.jpg` | **LOCKED** | Hip-up framing, confirms hair silhouette and bust profile |
+| 3 | `03_ThreeQuarter_Right.jpg` | **LOCKED** | Hip-up framing, mirrors view 2 |
+| 4 | `04_Side_Left.jpg` | TODO | True profile, full body, looking camera-left |
+| 5 | `05_Side_Right.jpg` | TODO | True profile, full body, looking camera-right |
+| 6 | `06_Back.jpg` | **LOCKED** | Over-shoulder back view; bun + boyshort waistband visible |
+| 7 | `07_Front_Happy.jpg` | TODO | Front view, happy/laughing expression |
+| 8 | `08_Expression_Sheet.jpg` | TODO | 2x2 grid: talking / surprised / smug / playful |
+| 9 | `09_Action_Pose.jpg` | Optional | Confident standing action pose |
+| 10 | `10_Front_FullBody.jpg` | TODO | Full body head-to-thigh for proportion lock |
 
 ---
 
 ## Locked Status
 
 - [x] Style Guide complete
-- [ ] All multi-view references generated
+- [x] Rendering style locked (painterly photoreal-anime hybrid)
+- [x] Eye color locked (#C8741F)
+- [x] Wardrobe locked (opaque ribbed cotton + opaque boyshorts)
+- [x] Front, ¾ left, ¾ right, back references locked (4 of 9)
+- [ ] Side profiles (left + right) generated
+- [ ] Full-body front shot generated
+- [ ] Expression sheet generated
 - [ ] Side-by-side consistency check passed
-- [ ] Expression variations generated
 - [ ] Folder backed up (cloud + local)
 - [ ] **LOCKED — do not change**
