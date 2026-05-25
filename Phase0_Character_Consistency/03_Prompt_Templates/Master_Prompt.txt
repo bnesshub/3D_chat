@@ -2,10 +2,16 @@
 MASTER PROMPT — Liora Voss multi-view reference set
 ================================================================
 
+**Use the ANCHOR BLOCK at the bottom of
+05_Locked_Visual_Description.md as the opening of every new
+prompt.** It is the as-built description pulled from the 5 locked
+reference images, not the original spec. It will reproduce the
+locked look more reliably than the older block below.
+
 Goal: produce 8–9 reference images that all look like the EXACT
 same character from different angles and expressions. Keep the
-"LOCKED CHARACTER BLOCK" identical across every generation so the
-style locks in. Only change the "View / Pose / Expression" line.
+anchor block identical across every generation so the style locks
+in. Only change the "View / Pose / Expression" line.
 
 ----------------------------------------------------------------
 LOCKED CHARACTER BLOCK (copy-paste verbatim, every generation)
