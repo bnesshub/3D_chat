@@ -1,0 +1,68 @@
+================================================================
+MASTER PROMPT TEMPLATE — Grok Imagine multi-view references
+================================================================
+
+Goal: produce 8–12 reference images that all look like the EXACT
+same character from different angles and expressions. Keep the
+first 2–3 sentences identical across every generation so the style
+locks in. Replace bracketed [PLACEHOLDERS] with values from
+01_Style_Guide.md.
+
+----------------------------------------------------------------
+TEMPLATE
+----------------------------------------------------------------
+
+Create a clean, high-definition cartoon character reference sheet in [YOUR EXACT STYLE] style.
+
+Character: [PASTE SHORT DESCRIPTION FROM STYLE GUIDE]
+
+Exact appearance rules:
+- [MUST-HAVE FEATURE 1]
+- [MUST-HAVE FEATURE 2]
+- [MUST-HAVE FEATURE 3]
+- [MUST-HAVE FEATURE 4]
+- [MUST-HAVE FEATURE 5]
+- Bold clean black outlines, flat colors with soft cel-shading
+- Large expressive eyes, [SPECIFIC EYE SHAPE]
+- Color palette: primary [#HEX], secondary [#HEX], accent [#HEX]
+
+View: [FRONT / THREE-QUARTER LEFT / SIDE LEFT / BACK / etc.]
+Pose: Neutral standing T-pose, arms slightly away from body, looking directly at camera
+Lighting: Soft even studio lighting, no harsh shadows
+Background: Pure white
+Resolution: 4K, sharp details, perfect proportions matching the style guide
+
+Do not add extra details, realistic textures, or change the character design.
+
+----------------------------------------------------------------
+ANTI-DRIFT APPEND (use on view #2 onward)
+----------------------------------------------------------------
+
+Strictly match the exact same character design, colors, and proportions as the previous images in this series.
+
+----------------------------------------------------------------
+VIEW CHECKLIST
+----------------------------------------------------------------
+
+[ ] 1. Front view — neutral T-pose
+[ ] 2. ¾ Front Left
+[ ] 3. ¾ Front Right
+[ ] 4. Side Left (profile)
+[ ] 5. Side Right (profile)
+[ ] 6. Back view
+[ ] 7. Front view — happy expression
+[ ] 8. Expression sheet (talking / surprised / thinking / smug)
+[ ] 9. Optional: action pose (wave / run / sit)
+
+----------------------------------------------------------------
+PRO TIPS FOR CONSISTENCY
+----------------------------------------------------------------
+
+- Keep the first 2–3 sentences of every prompt IDENTICAL.
+- Use the same seed if the tool offers it; otherwise log the
+  generation number in 04_Notes.txt.
+- Generate one view at a time; use "edit" or "vary" on a previous
+  image to keep style locked.
+- If results drift, paste the ANTI-DRIFT APPEND at the end.
+- If a view still drifts, regenerate it — do not move forward
+  with inconsistent references.

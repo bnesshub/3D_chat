@@ -1,0 +1,41 @@
+PHASE 0 — WORKING NOTES
+=======================
+
+Use this file to log decisions, seeds, prompt tweaks, and any
+fixes made during reference generation. Future-you will thank you.
+
+----------------------------------------------------------------
+GENERATION LOG
+----------------------------------------------------------------
+
+Date | View | Tool/Seed | Prompt notes | Result
+-----|------|-----------|--------------|--------
+     |      |           |              |
+     |      |           |              |
+     |      |           |              |
+
+----------------------------------------------------------------
+DESIGN DECISIONS
+----------------------------------------------------------------
+
+- (e.g. "Changed scarf color from teal to blue #2E86AB for better contrast on orange fur")
+-
+
+----------------------------------------------------------------
+KNOWN DRIFT / FIXES
+----------------------------------------------------------------
+
+- (e.g. "Side view kept shrinking ears — added 'large expressive ears, same size as front view' to prompt")
+-
+
+----------------------------------------------------------------
+QUALITY GATE CHECKLIST
+----------------------------------------------------------------
+
+[ ] All views show ears/eyes/snout/mouth/tail in identical proportions
+[ ] Colors match exactly across every image
+[ ] A stranger would recognize this as the same character from any angle
+[ ] No realistic textures or unwanted detail crept in
+[ ] Side and back views are clean enough for 3D generation tools
+
+Once every box is checked, mark the folder LOCKED in 01_Style_Guide.md.
