@@ -98,7 +98,7 @@
 | 1 | `01_Front_Neutral.jpg` | **LOCKED** | Head-to-mid-torso crop; full-body re-shoot pending |
 | 2 | `02_ThreeQuarter_Left.jpg` | **LOCKED** | Hip-up framing, confirms hair silhouette and bust profile |
 | 3 | `03_ThreeQuarter_Right.jpg` | **LOCKED** | Hip-up framing, mirrors view 2 |
-| 4 | `04_Side_Left.jpg` | TODO | True profile, full body, looking camera-left |
+| 4 | `04_Side_Left.jpg` | **LOCKED** | True 90° profile, head-to-mid-torso crop |
 | 5 | `05_Side_Right.jpg` | TODO | True profile, full body, looking camera-right |
 | 6 | `06_Back.jpg` | **LOCKED** | Over-shoulder back view; bun + boyshort waistband visible |
 | 7 | `07_Front_Happy.jpg` | TODO | Front view, happy/laughing expression |
@@ -114,8 +114,8 @@
 - [x] Rendering style locked (painterly photoreal-anime hybrid)
 - [x] Eye color locked (#C8741F)
 - [x] Wardrobe locked (opaque ribbed cotton + opaque boyshorts)
-- [x] Front, ¾ left, ¾ right, back references locked (4 of 9)
-- [ ] Side profiles (left + right) generated
+- [x] Front, ¾ left, ¾ right, back, side-left references locked (5 of 9)
+- [ ] Side-right profile generated
 - [ ] Full-body front shot generated
 - [ ] Expression sheet generated
 - [ ] Side-by-side consistency check passed
