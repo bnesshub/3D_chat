@@ -94,20 +94,23 @@
 
 | # | File | Status | Notes |
 |---|------|--------|-------|
-| 1 | `01_Front_Neutral.jpg` | **LOCKED** | Head-to-mid-torso crop; full-body re-shoot pending |
-| 2 | `02_ThreeQuarter_Left.jpg` | **LOCKED** | Hip-up framing, confirms hair silhouette and bust profile |
-| 3 | `03_ThreeQuarter_Right.jpg` | **LOCKED** | Hip-up framing, mirrors view 2 |
-| 4 | `04_Side_Left.jpg` | **LOCKED** | True 90° profile, head-to-mid-torso crop |
-| 5 | `05_Side_Right.png` | **LOCKED** | True right profile, head + collarbone (ChatGPT/DALL-E gen 11423) |
-| 6 | `06_Back.jpg` | **LOCKED** | Over-shoulder back view; bun + boyshort waistband visible |
+| 1 | `01_Front_Neutral.png` | **LOCKED** | Head + shoulders, neutral closed-mouth, direct gaze (ChatGPT gen 11446) |
+| 2 | `02_ThreeQuarter_Left.jpg` | **LOCKED** | Hip-up framing, confirms hair silhouette and bust profile (Grok v1) |
+| 3 | `03_ThreeQuarter_Right.jpg` | **LOCKED** | Hip-up framing, mirrors view 2 (Grok v1) |
+| 4 | `04_Side_Left.png` | **LOCKED** | True left profile, head + collarbone (ChatGPT gen 11444) |
+| 5 | `05_Side_Right.png` | **LOCKED** | True right profile, head + collarbone (ChatGPT gen 11445) |
+| 6 | `06_Back.jpg` | **LOCKED** | Over-shoulder back view; bun + boyshort waistband visible (Grok v1) |
 | 7 | `07_Front_Happy.png` | **LOCKED** | Front view, big laugh, teeth visible, eyes crinkled (gen 11428) |
 | 8 | `08_Surprised.png` | **LOCKED** | Front view, wide eyes, small "o" mouth, raised brows (gen 11427) |
 | 9 | `09_Smirk.png` | **LOCKED** | ¾ right favor, sideways glance, one-sided smirk (gen 11426) |
 | 10 | `10_Front_FullBody.png` | **LOCKED** | Full-body head-to-toe, neutral stance; wardrobe + hair color on-model (gen 11429) |
 | 11 | `11_FullBody_Side.png` | **LOCKED** | Full-body left-side profile (gen 11430) |
 | 12 | `12_FullBody_Back.png` | **LOCKED** | Full-body back view (gen 11431) |
+| 13 | `13_FullBody_Side_Right.png` | **LOCKED** | Full-body right-side profile — completes the 4-view turnaround (gen 11432) |
 
-> **Full-body set note (10, 11, 12):** rendered in a slightly cleaner / more photoreal style than the painterly close-ups. Internally consistent with each other — together they form a complete 3-view orthographic turnaround (front / side / back) for 3D mesh reconstruction.
+> **Set composition:** the main reference set is now predominantly ChatGPT/DALL-E renders (cleaner photoreal-painterly hybrid). The original Grok painterly versions of 01 and 04 are preserved in `v1_painterly_archive/`. Slots 02, 03, 06 are still the original Grok renders — they sit alongside the new set fine, but if pixel-perfect style cohesion matters later, regenerate those three in ChatGPT.
+
+> **Full-body 4-view turnaround (10, 11, 12, 13):** front / left-side / back / right-side, all rendered in the same cleaner style — this is the production input for 3D mesh reconstruction.
 
 ---
 
@@ -117,7 +120,7 @@
 - [x] Rendering style locked (painterly photoreal-anime hybrid)
 - [x] Eye color locked (#C8741F)
 - [x] Wardrobe locked (opaque ribbed cotton + opaque boyshorts)
-- [x] All 12 reference images locked (6 close-up angles + 3 expressions + 3 full-body orthographic views)
+- [x] All 13 reference images locked (6 close-up angles + 3 expressions + 4 full-body orthographic views)
 - [x] Side-right profile generated
 - [x] Core expressions generated (happy, surprised, smirk)
 - [ ] Additional expressions (thinking, talking, focused) — optional, generate as needed

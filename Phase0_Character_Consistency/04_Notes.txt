@@ -29,10 +29,18 @@ KNOWN DRIFT / FIXES
   replaced with gen 11429 from the ChatGPT session — color, wardrobe,
   and style all on-model. No caveats remain on this slot.
 - Added matching full-body side (11430) and back (11431) views.
-  These three together (10, 11, 12) form a clean 3-view orthographic
-  turnaround for 3D mesh reconstruction. Rendered in a slightly more
-  photoreal style than the painterly close-ups, but internally
-  consistent with each other — which is what the 3D pipeline needs.
+  Then completed with right-side full-body (11432). Slots 10/11/12/13
+  form a clean 4-view orthographic turnaround for 3D mesh reconstruction.
+  Rendered in a slightly more photoreal style than the painterly
+  close-ups, but internally consistent.
+- Replaced 01_Front_Neutral and 04_Side_Left with ChatGPT-rendered
+  versions (gens 11446, 11444). Added new 05_Side_Right close-up
+  (11445) matched to the new style. Originals of 01 and 04 preserved
+  in v1_painterly_archive/.
+- ChatGPT exports came in as phone screenshots with app UI overlays
+  (X button, carousel dots, share buttons). Cleaned them by painting
+  matching grey over the artifacts (and cropping the bottom 70px of
+  11446 where dots overlapped the white tank). Saved as PNG.
 - Grok Imagine tends to default to "near-front, head-to-mid-torso,
   painterly" and ignore view instructions. Leading the prompt with
   the framing/view requirement (instead of the character block)
