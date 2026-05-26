@@ -26,6 +26,8 @@ Upload these 4 to Meshy as the multi-view input:
 
 ## Verification checklist (run in Blender before promoting to `winner/`)
 
+Full step-by-step procedure (Blender install through silhouette render) is in [`BLENDER_VERIFICATION.md`](./BLENDER_VERIFICATION.md). The list below is the summary.
+
 - [ ] Single connected manifold — no holes, no floating chunks
 - [ ] Symmetric within ~2% along YZ plane
 - [ ] Silhouette test: render front at 1024px, place next to slot 10 — reads as "same character"
