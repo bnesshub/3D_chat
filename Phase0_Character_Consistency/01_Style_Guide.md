@@ -80,14 +80,13 @@
 
 | Expression  | Description                                       | Reference Image |
 |-------------|---------------------------------------------------|-----------------|
-| Neutral     | Relaxed, confident half-smile, direct gaze        | `02_Reference_Images/01_Front_Neutral.png` |
-| Happy       | Bright smile, eyes slightly narrowed              | `07_Front_Happy.png` |
-| Surprised   | Wide eyes, parted lips, raised brows              |                 |
-| Thinking    | One brow raised, lips slightly pursed             |                 |
-| Talking     | Mouth mid-word, animated brows                    |                 |
-| Smug        | One-sided smirk, eyes half-lidded                 |                 |
-| Playful     | Tongue-in-cheek grin, head slightly tilted        |                 |
-| Focused     | Eyes narrowed, lips set, brows lowered            |                 |
+| Neutral     | Relaxed, confident half-smile, direct gaze        | `02_Reference_Images/01_Front_Neutral.jpg` |
+| Happy       | Bright laugh, teeth visible, eyes crinkled        | `02_Reference_Images/07_Front_Happy.png` |
+| Surprised   | Wide eyes, small "o" mouth, raised brows          | `02_Reference_Images/08_Surprised.png` |
+| Smirk       | One-sided smirk, raised brow, sideways glance     | `02_Reference_Images/09_Smirk.png` |
+| Thinking    | One brow raised, lips slightly pursed             | TODO            |
+| Talking     | Mouth mid-word, animated brows                    | TODO            |
+| Focused     | Eyes narrowed, lips set, brows lowered            | TODO            |
 
 ---
 
@@ -99,11 +98,11 @@
 | 2 | `02_ThreeQuarter_Left.jpg` | **LOCKED** | Hip-up framing, confirms hair silhouette and bust profile |
 | 3 | `03_ThreeQuarter_Right.jpg` | **LOCKED** | Hip-up framing, mirrors view 2 |
 | 4 | `04_Side_Left.jpg` | **LOCKED** | True 90° profile, head-to-mid-torso crop |
-| 5 | `05_Side_Right.jpg` | TODO | True profile, full body, looking camera-right |
+| 5 | `05_Side_Right.png` | **LOCKED** | True right profile, head + collarbone (ChatGPT/DALL-E gen 11423) |
 | 6 | `06_Back.jpg` | **LOCKED** | Over-shoulder back view; bun + boyshort waistband visible |
-| 7 | `07_Front_Happy.jpg` | TODO | Front view, happy/laughing expression |
-| 8 | `08_Expression_Sheet.jpg` | TODO | 2x2 grid: talking / surprised / smug / playful |
-| 9 | `09_Action_Pose.jpg` | Optional | Confident standing action pose |
+| 7 | `07_Front_Happy.png` | **LOCKED** | Front view, big laugh, teeth visible, eyes crinkled (gen 11428) |
+| 8 | `08_Surprised.png` | **LOCKED** | Front view, wide eyes, small "o" mouth, raised brows (gen 11427) |
+| 9 | `09_Smirk.png` | **LOCKED** | ¾ right favor, sideways glance, one-sided smirk (gen 11426) |
 | 10 | `10_Front_FullBody.png` | **LOCKED (proportion anchor)** | Full-body head-to-ankles; hair color drifted auburn — pull color from close-up references, use this for proportions only |
 
 ---
@@ -114,12 +113,11 @@
 - [x] Rendering style locked (painterly photoreal-anime hybrid)
 - [x] Eye color locked (#C8741F)
 - [x] Wardrobe locked (opaque ribbed cotton + opaque boyshorts)
-- [x] Front, ¾ left, ¾ right, back, side-left, full-body references locked (6 of 9)
-- [ ] Side-right profile generated
-- [ ] Expression sheet generated
+- [x] All 10 reference images locked (front, ¾ L/R, side L/R, back, full-body, happy, surprised, smirk)
+- [x] Side-right profile generated
+- [x] Core expressions generated (happy, surprised, smirk)
 - [ ] Downstream 3D tools: pull hair/face/eye color from close-up references, NOT from `10_Front_FullBody.png` (color drifted auburn)
-- [ ] Full-body front shot generated
-- [ ] Expression sheet generated
+- [ ] Additional expressions (thinking, talking, focused) — optional, generate as needed
 - [ ] Side-by-side consistency check passed
 - [ ] Folder backed up (cloud + local)
 - [ ] **LOCKED — do not change**

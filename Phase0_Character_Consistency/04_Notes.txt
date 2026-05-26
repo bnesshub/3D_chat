@@ -34,6 +34,13 @@ KNOWN DRIFT / FIXES
   painterly" and ignore view instructions. Leading the prompt with
   the framing/view requirement (instead of the character block)
   helps break this pattern.
+- Switched to ChatGPT/DALL-E mid-phase for 05/07/08/09. Worked
+  much better because we could anchor each new gen to the previous
+  one with short "keep everything, only change X" prompts instead
+  of restating the full character every time.
+- New set (05, 07, 08, 09) has a slightly cleaner / less painterly
+  face render than the originals (01-04). Internally consistent
+  with each other. Acceptable variance for turnaround sheet.
 -
 
 ----------------------------------------------------------------
