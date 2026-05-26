@@ -103,7 +103,7 @@
 | 7 | `07_Front_Happy.png` | **LOCKED** | Front view, big laugh, teeth visible, eyes crinkled (gen 11428) |
 | 8 | `08_Surprised.png` | **LOCKED** | Front view, wide eyes, small "o" mouth, raised brows (gen 11427) |
 | 9 | `09_Smirk.png` | **LOCKED** | ¾ right favor, sideways glance, one-sided smirk (gen 11426) |
-| 10 | `10_Front_FullBody.png` | **LOCKED (proportion anchor)** | Full-body head-to-ankles; hair color drifted auburn — pull color from close-up references, use this for proportions only |
+| 10 | `10_Front_FullBody.png` | **LOCKED** | Full-body head-to-toe, neutral stance; wardrobe + hair color on-model (gen 11429) |
 
 ---
 
@@ -116,7 +116,6 @@
 - [x] All 10 reference images locked (front, ¾ L/R, side L/R, back, full-body, happy, surprised, smirk)
 - [x] Side-right profile generated
 - [x] Core expressions generated (happy, surprised, smirk)
-- [ ] Downstream 3D tools: pull hair/face/eye color from close-up references, NOT from `10_Front_FullBody.png` (color drifted auburn)
 - [ ] Additional expressions (thinking, talking, focused) — optional, generate as needed
 - [ ] Side-by-side consistency check passed
 - [ ] Folder backed up (cloud + local)

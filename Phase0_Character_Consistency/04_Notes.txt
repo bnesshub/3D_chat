@@ -25,11 +25,9 @@ DESIGN DECISIONS
 KNOWN DRIFT / FIXES
 ----------------------------------------------------------------
 
-- Full-body shot (10_Front_FullBody.png, gen 11419): hair color
-  drifted auburn/copper instead of dark-brown. Lighting flattened.
-  Locked anyway because the proportions are clean — this image is
-  the proportion anchor only. Downstream 3D tools should pull
-  hair/face/eye color from the close-up references.
+- Full-body shot: original gen 11419 had auburn hair-color drift,
+  replaced with gen 11429 from the ChatGPT session — color, wardrobe,
+  and style all on-model. No caveats remain on this slot.
 - Grok Imagine tends to default to "near-front, head-to-mid-torso,
   painterly" and ignore view instructions. Leading the prompt with
   the framing/view requirement (instead of the character block)
