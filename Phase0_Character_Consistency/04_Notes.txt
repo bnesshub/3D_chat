@@ -28,6 +28,11 @@ KNOWN DRIFT / FIXES
 - Full-body shot: original gen 11419 had auburn hair-color drift,
   replaced with gen 11429 from the ChatGPT session — color, wardrobe,
   and style all on-model. No caveats remain on this slot.
+- Added matching full-body side (11430) and back (11431) views.
+  These three together (10, 11, 12) form a clean 3-view orthographic
+  turnaround for 3D mesh reconstruction. Rendered in a slightly more
+  photoreal style than the painterly close-ups, but internally
+  consistent with each other — which is what the 3D pipeline needs.
 - Grok Imagine tends to default to "near-front, head-to-mid-torso,
   painterly" and ignore view instructions. Leading the prompt with
   the framing/view requirement (instead of the character block)

@@ -104,6 +104,10 @@
 | 8 | `08_Surprised.png` | **LOCKED** | Front view, wide eyes, small "o" mouth, raised brows (gen 11427) |
 | 9 | `09_Smirk.png` | **LOCKED** | ¾ right favor, sideways glance, one-sided smirk (gen 11426) |
 | 10 | `10_Front_FullBody.png` | **LOCKED** | Full-body head-to-toe, neutral stance; wardrobe + hair color on-model (gen 11429) |
+| 11 | `11_FullBody_Side.png` | **LOCKED** | Full-body left-side profile (gen 11430) |
+| 12 | `12_FullBody_Back.png` | **LOCKED** | Full-body back view (gen 11431) |
+
+> **Full-body set note (10, 11, 12):** rendered in a slightly cleaner / more photoreal style than the painterly close-ups. Internally consistent with each other — together they form a complete 3-view orthographic turnaround (front / side / back) for 3D mesh reconstruction.
 
 ---
 
@@ -113,7 +117,7 @@
 - [x] Rendering style locked (painterly photoreal-anime hybrid)
 - [x] Eye color locked (#C8741F)
 - [x] Wardrobe locked (opaque ribbed cotton + opaque boyshorts)
-- [x] All 10 reference images locked (front, ¾ L/R, side L/R, back, full-body, happy, surprised, smirk)
+- [x] All 12 reference images locked (6 close-up angles + 3 expressions + 3 full-body orthographic views)
 - [x] Side-right profile generated
 - [x] Core expressions generated (happy, surprised, smirk)
 - [ ] Additional expressions (thinking, talking, focused) — optional, generate as needed
